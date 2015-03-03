@@ -1,7 +1,0 @@
-- name: 'restart upstart-{{ daemonize_script_name }}'
-  sudo: true
-  service: >
-    name={{ daemonize_script_name }}
-    state=started
-  tags:
-    - services
